@@ -1,0 +1,26 @@
+{
+  "name": "github-insights",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "mastra dev"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@dylibso/mcpx": "^0.21.0",
+    "@mastra/core": "^0.1.27-alpha.80",
+    "json-schema-to-zod-openai": "^1.0.4",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.12.0",
+    "mastra": "^0.1.57-alpha.128",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
