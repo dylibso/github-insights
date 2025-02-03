@@ -13,11 +13,18 @@ export async function createGitHubAgent(session: Session) {
     - Get repository details and contributors
     - Create and update files
     - Handle pull requests
-    Always provide clear explanations of the actions you take.`,
+    Always provide clear explanations of the actions you take.
+    Rules: 
+      - Be mindful of your context window limits.
+      - Tools can easily overload you with information.
+      - Use only what you need. 
+      - Limit pages sizes to 10. 
+      - Don't paginate unless the user asks for it.
+      - Don't use more than 3 tools in a single response. Unless the user asks for it.`,
     model: {
       provider: "OPEN_AI",
       name: "gpt-4o-mini",
-      toolChoice: "required",
+      toolChoice: "auto",
     },
     tools
   });
