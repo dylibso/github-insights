@@ -255,7 +255,7 @@ npm run dev
 
 Go to `http://localhost:4111/agents/githubAgent`, and then you can start using the GitHub agent:
 
-![Agent conversation](./agent.png)
+![Agent conversation](./mastra-ai-agent.png)
 
 You can find the complete code for this example at:
 [mhmd-azeez/github-insights](https://github.com/mhmd-azeez/github-insights)

@@ -1,6 +1,7 @@
 import { Agent } from "@mastra/core";
 import { Session } from '@dylibso/mcpx';
 import { getMcpxTools } from '../tools/mcpx';
+import { openai } from "@ai-sdk/openai";
 
 export async function createGitHubAgent(session: Session) {
   const tools = await getMcpxTools(session);
@@ -21,11 +22,7 @@ export async function createGitHubAgent(session: Session) {
       - Limit pages sizes to 10. 
       - Don't paginate unless the user asks for it.
       - Don't use more than 3 tools in a single response. Unless the user asks for it.`,
-    model: {
-      provider: "OPEN_AI",
-      name: "gpt-4o-mini",
-      toolChoice: "auto",
-    },
-    tools
+    model: openai("gpt-4o-mini"),
+    tools: tools,
   });
 }

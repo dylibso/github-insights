@@ -1,7 +1,7 @@
 import { Session } from '@dylibso/mcpx';
 import { createTool } from '@mastra/core';
 import { z } from 'zod';
-import { convertToZodSchema } from 'json-schema-to-zod-openai';
+import { convertToZodSchema } from '@dylibso/json-schema-to-zod-openai';
 
 // Define consistent types across both implementations
 interface MCPXTool {

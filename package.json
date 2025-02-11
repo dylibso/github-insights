@@ -12,14 +12,15 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@dylibso/mcpx": "^0.21.0",
-    "@mastra/core": "^0.1.27-alpha.80",
-    "json-schema-to-zod-openai": "^1.0.4",
+    "@ai-sdk/openai": "^1.1.9",
+    "@dylibso/json-schema-to-zod-openai": "^1.0.5",
+    "@dylibso/mcpx": "^0.23.0",
+    "@mastra/core": "^0.2.0-alpha.96",
     "zod": "^3.24.1"
   },
   "devDependencies": {
     "@types/node": "^22.12.0",
-    "mastra": "^0.1.57-alpha.128",
+    "mastra": "^0.2.0-alpha.96",
     "tsx": "^4.19.2",
     "typescript": "^5.7.3"
   }
